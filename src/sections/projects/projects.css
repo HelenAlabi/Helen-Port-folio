@@ -1,0 +1,65 @@
+.projectContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 35% 35%;
+    gap: 8%;
+    
+}
+
+
+
+.card.projects{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: white;
+    flex-direction: column;
+}
+
+.card.projects:hover{
+    
+    background:var(--color-light) ;
+    border-color: var(--color-primary) ;
+}
+
+.projectImages{
+   
+    transition: var(--transition);
+    height: 20rem;
+    width: 100%;
+ 
+}
+
+#proImg{
+    
+    height: 10rem;
+    
+}
+
+.projects:hover .skillsIcons{
+    background:var(--color-light) ;
+    color: var(--color-primary) ;
+    
+}
+
+.project h4{
+    margin-bottom: 0.7rem;
+}
+
+
+@media screen and (max-width:1024px){
+    .skillsContainer{
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .skillsContainer{
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .card.skills{
+        gap: 1.2rem;
+    }
+}

@@ -1,0 +1,38 @@
+
+
+.contactContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  #container{
+    height: 25rem;
+    width: 20rem;
+   
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-light);
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+
+  input[type="text"],
+  input[type="email"],
+  textarea:hover{
+    
+    border: 1px solid var(--color-primary);
+    
+  }
+
+
+  textarea {
+    height: 150px;
+  }
+  
+  

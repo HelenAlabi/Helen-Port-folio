@@ -1,0 +1,48 @@
+.skillsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 4rem;
+}
+
+.card.skills{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.skillsIcons{
+    background-color: var(--color-primary);
+    padding: 0.6rem;
+    border-radius: var(--border-radius-3);
+    font-size: 1.5rem;
+    color: white;
+    transition: var(--transition);
+    height: 2.5rem;
+}
+
+.skills:hover .skillsIcons{
+    background:var(--color-light) ;
+    color: var(--color-primary) ;
+}
+
+.skills h4{
+    margin-bottom: 0.7rem;
+}
+
+@media screen and (max-width:1024px){
+    .skillsContainer{
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .skillsContainer{
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .card.skills{
+        gap: 1.2rem;
+    }
+}
+

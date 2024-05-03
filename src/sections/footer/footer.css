@@ -1,0 +1,37 @@
+footer{
+  width: 100vw;
+  height: 10rem;
+  display: grid;
+  place-items: center;
+  background: var(--color-primary);
+ 
+  box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
+  transition: var(--transition);
+}
+
+.navContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLogo{
+  width: 2.5rem;
+}
+
+.navMenu{
+  display: flex;
+  gap: 3.5rem;
+}
+
+#copy{
+  color: white;
+}
+
+@media screen and (max-width: 1024px){
+  .navMenu{
+      display: none;
+  }
+}
+
+  
