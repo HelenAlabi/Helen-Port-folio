@@ -77,12 +77,22 @@
 }
 
 @media screen and(max-width:600px) {
+
+    .aboutContainer{
+        grid-template-columns: 1fr;
+    }
     .aboutCards{
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1.2rem;
     }
 
     .aboutRight .btn{
         margin-top: 2rem;
     }
 }
+
+.card .aboutCard{
+    text-align: center;
+
+}
+

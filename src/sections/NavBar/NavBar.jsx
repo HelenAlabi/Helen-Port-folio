@@ -1,25 +1,35 @@
-import { useDarkMode } from '../../DarkModeContext';
+import { useState } from 'react'
 import Logo from '../../assets/logo.png'
 import data from './data'
-import { IoMdColorPalette } from "react-icons/io";
-import  './navBar.css'
-
-
+import './navBar.css'
 
 const NavBar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const { isDarkMode, toggleDarkMode } = useDarkMode();
+  const menuHandler = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav className={`navbar ${isDarkMode ? 'dark-navbar' : ''}`}>
-        <div className= "container  navContainer">
-            <a href="../../../index.html" className= 'navLogo'>
-                <img src={Logo} alt="Logo" />
-            </a>
-            <ul className= 'navMenu'>
-                {data.map(item =><li key={item.id}><a href={item.link}>{item.title}</a></li>)}
+    <nav>
+      <div className="container navContainer">
+        <a href="../../../index.html" className='navLog'>
+          <img src={Logo} alt="Logo" />
+        </a>
+        <ul className='navMenu' id='navMenu'>
+          {data.map(item => <li key={item.id}><a href={item.link}>{item.title}</a></li>)}
+        </ul>
+        <div className= "hamburgerMenu">
+          <div className= "hamburger" onClick={menuHandler}>
+            {isMenuOpen ? '⁙' : '≡'}
+          </div>
+          {isMenuOpen && (
+            <ul className= 'navHamMenu' id='navHamMenu'>
+              {data.map(item => <li key={item.id}><a href={item.link}>{item.title}</a></li>)}
             </ul>
-            {/* <button id='themeIcon'><IoMdColorPalette onClick={toggleDarkMode}/>{isDarkMode ? 'Light Mode' : 'Dark Mode'} </button> */}
+          )}
         </div>
+      </div>
     </nav>
   )
 }

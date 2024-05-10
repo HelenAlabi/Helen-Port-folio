@@ -75,7 +75,20 @@ header{
     header{
         margin-top: 0;
         height: 100vh;
+       
     }
+
+    .headerProfile{
+       
+        height:20rem;
+      
+    }
+
+    #headImage{
+        height: 20rem;
+    }
+
+   
 }
 
 @media screen and (max-width: 600px) {
@@ -94,7 +107,13 @@ header{
         gap:1rem;
     }
 
-    .headerSocials {
-        display: none;
+  
+
+    #headImage{
+        height: 17rem;
     }
+
+   #ha{
+    margin-top: 2.5%;
+   }
 }

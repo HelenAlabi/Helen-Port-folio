@@ -18,11 +18,12 @@ nav{
     align-items: center;
 }
 
-.navLogo{
-    width: 2.5rem;
+.navLog{
+    width: 3.5rem;
 }
 
-.navMenu{
+
+#navMenu{
     display: flex;
     gap: 3.5rem;
 }
@@ -32,15 +33,60 @@ nav{
     color: white;
     font-size:2rem ;
     cursor: pointer;
+} 
+
+.hamburgerMenu{
+    display: none;
 }
 
-.dark-navbar {
-    background-color: #000; /* Dark mode background color */
-    color: #fff;
-  }
+@media screen and (max-width: 700px){
 
-@media screen and (max-width: 1024px){
-    .navMenu{
+    #navMenu{
         display: none;
     }
+    .hamburgerMenu{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .hamburger{
+        color: white;
+        font-weight: lighter;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .navLog{
+        width: 3rem;
+        position: relative;
+      
+    }
+
+    .navHamMenu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        float: right;
+        padding: 10px;
+      }
+    
+      .navHamMenu li {
+        margin: 5px 0;
+        color: var(--color-primary);;
+      }
+
+      .navHamMenu li a{
+    
+        color: var(--color-primary);;
+      }
+    
+
+
+
+
+
 }
+
+
+

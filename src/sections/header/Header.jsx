@@ -22,12 +22,12 @@ const Header = () => {
             <div className= "headerProfile">
                 <img id='headImage' src= {HeaderImage} alt="header image" />
             </div>
-            <h3>Helen Alabi</h3>
+            <h3 id='ha'>Helen Alabi</h3>
             {/* <h4 id="sD">Software Developer</h4> */}
-            <p>I am passionate about crafting efficient, scalable solutions to real-world problems.</p>
+            <p id='pa'>I am passionate about crafting efficient, scalable solutions to real-world problems.</p>
             <div className= "headerCta">
               <a href="#contact" className= 'btn primary'>Let talk</a>
-              <a href="#projects" className='btn light'>My Works</a>
+              <a href="#projects" className= 'btn light'>My Works</a>
             </div>
             <div className= "headerSocials">
               {
