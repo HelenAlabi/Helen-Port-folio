@@ -34,7 +34,7 @@ const Projects = () => {
                 <p >{item.desc}</p>
                 <div className= "clicking"><Clicks>
                      <a href= {item.demo} className= 'btn primary'>Demo</a>
-                     <a href={item.git} className='btn light'>Github</a>
+                     <a href={item.git} className= 'btn light'>Github</a>
                   </Clicks></div>
               </div>
 

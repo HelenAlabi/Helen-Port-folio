@@ -11,7 +11,7 @@ footer{
 
 .navContainer{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -28,10 +28,7 @@ footer{
   color: white;
 }
 
-.navSoc{
 
-
-}
 
 .footerSocials{
   width: 3.5rem;
@@ -40,20 +37,21 @@ footer{
 
 }
 
-.footerSocials a{
+#footImg{
   width: 2.5rem;
   height: 2.5rem;
 }
 
-.footerSocials a:hover{
-  
-}
 
-/* @media screen and (max-width: 1024px){
-  .navMenu{
-          display: flex;
-          gap: 2.5rem;
-    
+
+@media screen and (max-width: 600px){
+  #footImg{
+    width: 2rem;
+    height: 2rem;
   }
-} */
+
+  .navLogo{
+    display: none;
+  }
+}
   

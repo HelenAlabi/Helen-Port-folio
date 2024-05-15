@@ -36,7 +36,7 @@
     
 }
 
-.projects:hover .skillsIcons{
+.projects:hover{
     background:var(--color-light) ;
     color: var(--color-primary) ;
     
@@ -48,18 +48,41 @@
 
 
 @media screen and (max-width:1024px){
-    .skillsContainer{
+    .projectContainer{
         gap: 1.5rem;
     }
 }
 
 @media screen and (max-width:600px){
     .skillsContainer{
+        display: grid;
         grid-template-columns: 1fr;
         gap: 1.2rem;
     }
 
-    .card.skills{
+    .card.projects{
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 1.2rem;
     }
+
+    .projectContainer{
+        grid-template-columns: 1fr;
+        
+    }
+
+    .projectDetails h4{
+        margin-bottom: 0.7rem;
+        margin-top: -50%;
+       
+    }
+
 }
+
+
+
+
+
+
+
+

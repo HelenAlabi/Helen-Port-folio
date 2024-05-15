@@ -62,10 +62,8 @@
     margin-top: 2.5rem;
 }
 
-@media screen and(max-width:1024px) {
-    .aboutLeft{
-        display: none;
-    }
+@media screen and (max-width:1024px) {
+  
 
     .aboutContainer{
         grid-template-columns: 1fr;
@@ -76,7 +74,11 @@
     }
 }
 
-@media screen and(max-width:600px) {
+@media screen and (max-width:600px) {
+
+    .aboutLeft{
+        display: none;
+    }
 
     .aboutContainer{
         grid-template-columns: 1fr;
@@ -89,10 +91,18 @@
     .aboutRight .btn{
         margin-top: 2rem;
     }
+    .card .aboutCard{
+        text-align: center;
+
+    }
+
+    #h4{
+        margin-top: 15%;
+    }
+
+
+
 }
 
-.card .aboutCard{
-    text-align: center;
 
-}
 
