@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <section id='projects'>
       <h2 id='pro'>My Projects</h2>
-      <p id='proP'>Explore </p>
+      <p id='proP'>Explore Now  </p>
       <div className= "container projectContainer">
          {
           data.map(item =>(

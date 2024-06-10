@@ -103,6 +103,7 @@ header{
 
     .headerCta{
         gap:1rem;
+       margin-top: 15%;
     }
 
   
@@ -112,7 +113,7 @@ header{
     }
 
    #ha{
-    margin-top: 2.5%;
+    margin-top: 5%;
   
 
 
@@ -124,7 +125,7 @@ header{
     font-size: 1rem;
     text-align: center;
     width: 20rem;
-    margin-right: 13%;
+    margin-right: 15%;
     
 
    }

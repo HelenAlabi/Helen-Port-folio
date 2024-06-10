@@ -24,8 +24,8 @@ const data =[
 const Services = () => {
   return (
     <section id='skills'>
-      <h2>My Skill</h2>
-      <p>My Skills </p>
+      <h2>Languages & Tools</h2>
+      <p>I am proficient in using the following languages and tools. However, I am eager to learn a new technologies and stay up-to-date with the latest development in the industry.  </p>
       <div className= "container skillsContainer">
          {
           data.map(item =>(

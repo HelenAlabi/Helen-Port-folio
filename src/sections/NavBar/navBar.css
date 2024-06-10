@@ -1,4 +1,5 @@
-nav{
+
+ nav {
     width: 100vw;
     height: 5rem;
     display: grid;
@@ -12,95 +13,94 @@ nav{
     transition: var(--transition);
 }
 
-.navContainer{
+.navContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navLog{
+.navLog {
     width: 3.5rem;
 }
 
-
-#navMenu{
+#navMenu {
     display: flex;
     gap: 3.5rem;
 }
 
-#themeIcon{
+#themeIcon {
     background: transparent;
     color: white;
-    font-size:2rem ;
+    font-size: 2rem;
     cursor: pointer;
-} 
+}
 
-.hamburgerMenu{
+.hamburgerMenu {
     display: none;
 }
 
-@media screen and (max-width: 700px){
-
-    #navMenu{
+@media screen and (max-width: 700px) {
+    #navMenu {
         display: none;
     }
-    .hamburgerMenu{
+
+    .hamburgerMenu {
         display: flex;
         justify-content: space-around;
+        background: var(--color-primary);
     }
 
-    .hamburger{
+    .hamburger {
         color: white;
         font-weight: lighter;
         font-size: 30px;
         cursor: pointer;
     }
 
-    .navLog{
+    .navLog {
         width: 3rem;
         position: relative;
-      
     }
 
     .navHamMenu {
+        background: var(--color-primary);
+        width: 70%;
+        max-width: 300px;
+        height: 60%;
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 100%;
-        float: right;
-        padding: 10px;
-      }
-    
-      .navHamMenu li {
-        margin: 5px 0;
-        color: var(--color-primary);;
-      }
-
-      .navHamMenu li a{
-    
-        color: var(--color-primary);;
-      }
-
-      nav{
-        width: 100vw;
-        height: 5rem;
-        display: grid;
-        place-items: center;
-        background: var(--color-primary);
+        padding: 1rem;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
         position: fixed;
         top: 0;
-        left: 0;
-        z-index: 9;
-        box-shadow: 0 1rem 1.5rem hsla(var(--primary-hue), 68%, 42%, 20%);
-        transition: var(--transition);
+        right: 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 11;
     }
-    
 
+    .navHamMenu.open {
+        transform: translateX(0);
+    }
 
+    .navHamMenu ul {
+        padding: 0;
+        list-style: none;
+        margin-top: 1rem;
+    }
 
+    .navHamMenu li {
+        margin: 1rem 0;
+    }
 
+    .navHamMenu li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
 
+    .navHamMenu .hamburger {
+        align-self: flex-end;
+        margin-bottom: 1rem;
+    }
 }
-
-
-

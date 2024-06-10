@@ -17,6 +17,11 @@
    
 }
 
+.abtmeW{
+     margin-top: -20%;
+
+}
+
 #h4{
     margin-top: 2%;
 }
@@ -24,7 +29,7 @@
 .aboutCards{
     display: grid;
     margin : 3rem 0 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
@@ -54,10 +59,13 @@
     margin: 1rem 0;
 }
 
-.aboutRight p{
+.aboutLeft p{
     margin-bottom: 0.8rem;
+    
 }
-
+ #p{
+    margin-bottom: 0.8rem;
+ }
 .aboutRight .btn{
     margin-top: 2.5rem;
 }
@@ -97,9 +105,13 @@
     }
 
     #h4{
-        margin-top: 15%;
+        margin-top: 5%;
+        text-align: center;
     }
-
+   #about{
+    margin-top: -10%;
+   }
+  
 
 
 }

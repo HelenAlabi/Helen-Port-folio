@@ -24,7 +24,7 @@ const Header = () => {
             </div>
             <h3 id='ha'>Helen Alabi</h3>
             {/* <h4 id="sD">Software Developer</h4> */}
-            <p id='pa'>I am passionate about crafting efficient, scalable solutions to real-world problems.</p>
+            <p id='pa'>I am passionate about crafting <br /> efficient, scalable solutions <br /> to real-world problems.</p>
             <div className= "headerCta">
               <a href="#contact" className= 'btn primary'>Let talk</a>
               <a href="#projects" className= 'btn light'>My Works</a>

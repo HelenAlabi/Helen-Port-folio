@@ -23,11 +23,17 @@ const About = () => {
         <div className= "aboutLeft" id="aboutLeft">
           <div className= "aboutImage" >
             <img src={AboutImage} alt=""/>
+          
           </div>
+          <p id="p"> I am Helen a passionate Software Engineer based in Lagos. I thrive on exploring new and innovative ways to create exceptional user experiences. With dedication and hard work, I have built a portfolio that showcases my skills and expertise. Feel free to explore my work and see how I can help bring your web dreams to life. Let&#39;s collaborate and make something amazing together! Check out my resume below!
+          </p>
+          <a href={CV} download  className= "btn primary">Download CV <MdOutlineFileDownload /> </a>
         </div>
         <div className= "aboutRight">
-          <h2>About Me</h2>
-          <h4 id="h4">I have soft skills in:</h4>
+          <div className= "abtmeW">
+              <h2 id = "abtMe">About Me</h2>
+              <h4 id="h4">I have soft skills in:</h4>
+          </div>
           <div className= "aboutCards" >
             {
               data.map(item =>(<Card key={item.id} className= 'aboutCard' id ='aboutCard'>
@@ -37,9 +43,8 @@ const About = () => {
             }
 
           </div>
-          <p> I am Helen a passionate Software Engineer based in Lagos. I thrive on exploring new and innovative ways to create exceptional user experiences. With dedication and hard work, I have built a portfolio that showcases my skills and expertise. Feel free to explore my work and see how I can help bring your web dreams to life. Let&#39;s collaborate and make something amazing together! Check out my resume below!
-          </p>
-          <a href={CV} download  className= "btn primary">Download CV <MdOutlineFileDownload /> </a>
+          
+          
 
         </div>
       </div>

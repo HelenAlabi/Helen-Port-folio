@@ -70,6 +70,7 @@ section:nth-child(even){
 
 section > h2{
   text-align: center;
+  margin-top: -8%;
 }
 
 section > p{
@@ -184,6 +185,11 @@ img{
     width: var(--container-width-md);
   }
 
+  section > h2{
+    text-align: center;
+    margin-top: -8%;
+  }
+
   section{
     padding: 8rem 0 ;
   }
@@ -204,8 +210,11 @@ img{
 
   section > p{
     width: var(--container-width-md);
+  
     
   }
+
+
 
   h1{
     font-size: 2.4rem;
